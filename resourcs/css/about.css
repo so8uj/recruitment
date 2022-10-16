@@ -1,0 +1,176 @@
+/* about page css  */
+/* ==================== */
+
+/* common code  */
+/* ================================ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-a: #FEB041;
+    --color-b: #22A9E1;
+    --color-c: #0E74BC;
+    --color-d: #fff;
+}
+
+#text_color {
+    color: var(--color-b);
+    transition: all 0.3s ease;
+}
+
+/* about page css start  */
+.about {
+    margin-top: 10.2rem;
+}
+.about_header{
+    display: flex;
+    align-items: center;
+}
+.about_header_wrapper{
+    background-image: url(../images/services-dark-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 2rem 0rem;
+}
+#right_arrow{
+    font-size: 3rem;
+    color: var(--color-c);
+    margin-right: 1rem;
+}
+.about_header > h1{
+    font-size: 2rem;
+    color: var(--color-d);
+    font-weight: 600;
+    margin: 0;
+}
+.about_body_wapper {
+    padding: 4rem 0rem;
+}
+.about_header_left > h2 {
+    font-size: 3rem;
+}
+
+.about_header_left > h4 {
+    font-size: 2rem;
+    margin: 1rem 0rem;
+}
+.about_header_left > p {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+.about_header_left > ul{
+    margin-top: 3rem;
+}
+.about_header_left > ul > li {
+    font-size: 2rem;
+    font-weight: 400;
+}
+.about_header_left > ul > li:before {
+    content: "\f1db";
+    font-family: FontAwesome;
+    font-style: normal;
+    text-decoration: inherit;
+    color: #7FAAFF;
+    margin-right: 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.about_header_right{
+    padding-top: 13rem;
+    padding-left: 5rem;
+}
+.about_header_right > img {
+    width: 15rem;
+    margin-left: 2rem;
+}
+.about_header_right > h2 {
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+/* why shanin section css  */
+.why_shanin{
+    background-image: url(../images/services-dark-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 5rem 0rem;
+    margin-top: 5rem;
+}
+.why_shanin_left > h1 {
+    font-size: 3rem;
+    margin: 1rem 0rem;
+    color: var(--color-d);
+    font-weight: 600;
+}
+
+.why_shanin_left > img,
+.why_shanin_right > img {
+    width: 6rem;
+    margin: 2rem  0rem;
+}
+.why_shanin_left > h2,
+.why_shanin_right > h2{
+    font-size: 2rem;
+    color: var(--color-c);
+    font-weight: 600;
+}
+.why_shanin_left > p,
+.why_shanin_right > p{
+    font-size: 1.8rem;
+    color: var(--color-d);
+    font-weight: 400;
+}
+.why_shanin_right{
+    padding-top: 5.5rem;
+}
+
+
+/* tream section css start  */
+.tream_section{
+    padding: 2rem 0rem 5rem 0rem;
+}
+.team_header > h1{
+    font-size: 3rem;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 3.5rem;
+}
+.team_member_card {
+    height: 42rem;
+    text-align: center;
+    box-shadow: 1px 1px 8px #0000008f;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3 ;
+}
+.team_member_card:hover {
+    box-shadow: 1px 1px 8px #000000d0;
+}
+
+.team_member_card > img {
+    height: 25rem;
+}
+.team_member_card > h1{
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+.team_member_card > h2{
+    font-size: 1.8rem;
+}
+.team_member_card > p {
+    font-size: 1.6rem;
+    padding: 0rem 2rem;
+}
+
+@media(max-width:991px){
+    .about_header_right{
+        display: none;
+    }
+    .why_shanin_right {
+        padding-top: 0rem;
+    }
+}

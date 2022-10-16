@@ -1,0 +1,122 @@
+/* common css  */
+/* ================================ */
+:root {
+    --color-a: #FEB041;
+    --color-b: #22A9E1;
+    --color-c: #0e73bb;
+    --color-d: #fff;
+}
+
+#text_color {
+    color: var(--color-b);
+    transition: all 0.3s ease;
+}
+
+
+/* contact form css start  */
+/* ============================== */
+.contact_form_container{
+    margin-top: 10.2rem;
+
+}
+.contact_header_wrapper{
+    background-image: url(../images/services-dark-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 1.5rem 0rem;
+}
+.contact_header{
+    display: flex;
+    align-items: center;
+}
+#right_arrow{
+    font-size: 3rem;
+    color: var(--color-c);
+    margin-right: 1rem;
+}
+.contact_header > h2{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--color-d);
+}
+.contact_body_wrapper{
+    padding: 6rem 0rem;
+}
+.contact_body_titile > h1 {
+    font-size: 3rem;
+}
+
+.contact_body_titile > h2 {
+    font-size: 2rem;
+}
+.contact_form{
+    width: 100%;
+    margin-top: 2rem;
+}
+.contact_info > h1 {
+    text-align: center;
+}
+#name,
+#phone,
+#eamil,
+#massage{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d2d2d2;
+    border-radius: 0px;
+    margin-bottom: 15px;
+    padding: 0.7rem;
+    /* text-transform: capitalize; */
+}
+#massage{
+    height: 15rem;
+}
+#name,
+#phone,
+#eamil,
+#massage:focus{
+    border: 1px solid var(--color-c);
+}
+#submitBtn{
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-c);
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    color: var(--color-d);
+    font-weight: 600;
+}
+
+.contact_info{
+    margin-top: 2rem;
+    background-color: var(--color-c);
+    padding: 1.5rem;
+    color: var(--color-d);
+
+}
+.location {
+    margin-top: 1.5rem;
+}
+.footer_card_body{
+    margin: 0rem;
+}
+.phone {
+    margin-top: 2rem;
+}
+.email {
+    margin-top: 2rem;
+}
+
+
+/* responsive css  start*/
+@media(max-width:767px){
+    .contact_info{
+        display: none;
+    }
+}

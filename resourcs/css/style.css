@@ -1,0 +1,367 @@
+/* RESET CSS  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+img {
+    width: 100%
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+html {
+    font-size: 62.0%;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: 'Arimo', sans-serif;
+}
+
+/* common code  */
+/* ================================ */
+:root {
+    --color-a: #FEB041;
+    --color-b: #22A9E1;
+    --color-c: #0E74BC;
+    --color-d: #fff;
+}
+
+#text_color {
+    color: var(--color-b);
+    transition: all 0.3s ease;
+}
+
+#text_color:hover {
+    color: var(--color-c);
+}
+
+/* adding  arimo fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600&display=swap');
+/* font-family: 'Arimo', sans-serif; */
+/* font-wedith 400, 500, 600 */
+
+
+/* header section css start  */
+/* =============================== */
+.header_wrapper {
+    background-color: var(--color-d);
+    color: #000;
+    padding: 1rem 0rem;
+    box-shadow: 1px 1px 3px #0000008f;
+    margin-bottom: 0.2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.BrandIcon> a >img {
+    width: 10rem;
+    height: 8rem;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu>li {
+    margin-left: 2.5rem;
+}
+
+.menu>li>a {
+    font-size: 1.8rem;
+    color: var(--color-c);
+    font-weight: 600;
+    transition: 0.3s;
+}
+.menu>li>a:hover{
+    color: var(--color-a);
+}
+.sticky {
+    background-color: var(--color-d);
+}
+#bars{
+    display: none;
+}
+
+/* hero area section css start  */
+/* ================================= */
+.hero_area_wrapper {
+    height: 82vh !important;
+    margin-top: 10.3rem;
+}
+
+.carousel-item>img {
+    height: 82vh !important;
+}
+
+/* services section css start  */
+/* ===================================== */
+.services_header_wrapper {
+    padding: 4rem 0rem;
+    background-color: black;
+    background-image: url(../images/services-dark-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.services_header {
+    display: flex;
+    align-items: center;
+}
+
+.services_header>.fa-angles-right {
+    font-size: 4rem;
+    color: var(--color-c);
+    margin-right: 1rem;
+}
+
+.services_header>h1 {
+    font-size: 3.6rem;
+    color: var(--color-d);
+    font-weight: 600;
+    font-family: 'Arimo', sans-serif;
+}
+
+.services_body {
+    padding: 4rem 0rem;
+}
+
+.services_card {
+    text-align: center;
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0.1rem 0.1rem 1rem #6665657a;
+    margin-top: 2rem;
+    transition: 0.3s;
+}
+.services_card:hover {
+    box-shadow: 0.1rem 0.1rem 1rem #666565c7;
+}
+.services_card>img {
+    width: 4rem;
+}
+
+.services_card>h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-b);
+    font-family: 'Arimo', sans-serif;
+    padding: 1rem 0rem;
+}
+
+.services_card>h2:hover {
+    color: var(--color-c);
+}
+
+.services_card>p {
+    font-size: 1.6rem;
+    color: #000;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    transition: all 0.3s;
+}
+
+/* footer section css start  */
+/* ========================================= */
+.footer_header_wrapper {
+    background-color: rgb(2 2 2 / 87%);
+    padding: 3rem 0rem;
+}
+
+.footer_header {
+    text-align: center;
+}
+
+.footer_header>h1 {
+    font-size: 3rem;
+    color: var(--color-d);
+}
+
+.footer_body {
+    margin: 4rem 0rem;
+}
+
+.footer_card {
+    margin-top: 1rem;
+}
+
+.footer_card_header {
+    display: flex;
+    align-items: center;
+}
+
+.footer_card_header>img {
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+.footer_card_header>h3 {
+    font-size: 2rem;
+}
+
+.footer_card_body {
+    margin-top: 1.5rem;
+}
+
+.footer_card_body>p {
+    font-size: 1.6rem;
+}
+
+.main_footer_wrapper {
+    background-color: var(--color-b);
+    color: var(--color-d);
+}
+
+.main_footer {
+    padding: 1.5rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social_icon>i {
+    color: var(--color-d);
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.social_icon>i:hover {
+    transform: scale(1.2);
+}
+
+.copyRighttext {
+    font-size: 1.8rem;
+}
+
+
+
+/* responsive css start from here  */
+/* ====================================== */
+
+@media (max-width:991px) {
+    /* mobile menu  */
+    .menu{
+        position: absolute;
+        right: 0;
+        width: 40%;
+        height: 52rem;
+        display: block;
+        margin-top: 62rem;
+        padding: 7rem;
+        background-color: var(--color-c);
+        transform: scaleX(0);
+        transform-origin:right;
+        transition:all 0.3s  linear;
+    }
+    #bars {
+        width: 3.5rem;
+        position: absolute;
+        top: 45px;
+        right: 20%;
+        display: block;
+    }
+    #bar1,
+    #bar2,
+    #bar3 {
+        width: 100%;
+        height: 0.5rem;
+        background-color: var(--color-c);
+        border-radius: 0.5rem;
+        transition: all 0.2s linear;
+    }
+
+    #bar1 {
+        transform: translateY(-0.4rem);
+    }
+
+    #bar3 {
+        transform: translateY(0.6rem);
+    }
+
+    .clicked #bar1 {
+        transform: translateY(0.4rem) rotate(-45deg);
+    }
+
+    .clicked #bar2 {
+        opacity: 0;
+    }
+
+    .clicked #bar3 {
+        transform: translateY(-0.6rem) rotate(45deg);
+    }
+    .showMenu{
+        transform: scaleX(1);
+    }
+    .showMenu > li > a{
+        color: var(--color-d);
+        line-height: 2;
+    }
+    .showMenu > li > a:hover{
+        border-bottom: 2px soli var(--color-a) !important;
+    }
+}
+
+@media (max-width:767px) {
+    .footer_card {
+        text-align: center;
+    }
+
+    .footer_card_header {
+        width: 20rem;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width:575px) {
+    .header>.BrandIcon>img {
+        margin-left: 10rem;
+    }
+
+    #bars {
+        right: 14%;
+    }
+    .menu{
+        width: 100%;
+        text-align: center;
+    }
+    .hero_area_wrapper {
+        height: 50vh !important;
+    }
+    
+    .carousel-item>img {
+        height: 50vh !important;
+    }
+    .footer_card {
+        text-align: left ;
+        margin-left: 4rem;
+    }
+    .footer_card_header {
+        margin: 0;
+    }
+}

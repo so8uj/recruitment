@@ -1,0 +1,99 @@
+/* common code css  */
+/* ======================= */
+:root {
+    --color-a: #FEB041;
+    --color-b: #22A9E1;
+    --color-c: #0E74BC;
+    --color-d: #fff;
+}
+#text_color {
+    color: var(--color-b);
+    transition: all 0.3s ease;
+}
+
+
+/* blog header css  */
+/* ===================== */
+.blog_header_container{
+    background-image: url(../images/services-dark-bg.jpg);
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 2rem 0rem;
+    margin-top: 10.2rem;
+}
+.blog_header{
+    display: flex;
+    align-items: center;
+}
+#right_arrow{
+    font-size: 4rem;
+    color: var(--color-c);
+    margin-right: 1rem;
+}
+.blog_header > h1 {
+    color: var(--color-d);
+    font-size: 3rem;
+    font-weight: 600;
+} 
+
+/* main blog css start  */
+/* ============================ */
+.blog_title {
+    margin: 1rem 0rem;
+}
+.main_blog {
+    margin-top: 3rem;
+}
+.blog_body {
+    padding-bottom: 5rem;
+}
+.blog_title > h2 {
+    font-size: 2.5rem;
+}
+.blog_img > img {
+    height: 50rem;
+    margin-bottom: 2rem;
+}
+.blog_dosc > p{
+    font-size: 1.6rem;
+}
+
+/* latest-blogs section css start  */
+/* =================================== */
+.latest-blog-single{
+    margin-bottom: 1.5rem;
+    box-shadow: 1px 1px 0.8rem #0000005c;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    padding: 1rem;
+}
+.latest-blogs{
+    padding-top: 4.5rem;
+}
+#latest_blog{
+    box-shadow: 1px 1px 10px #0000005c;
+    padding: 0.5rem;
+    font-weight: 600;
+}
+.latest_blog_titile > h2 {
+    font-size: 1.4rem;
+}
+.latest_blog_time{
+    display: flex;
+    align-items: center;
+}
+.latest_blog_dosc > p{
+    font-size: 1.2rem;
+    margin-top: 0.3rem;
+}
+
+.latest-blogs > h3:before {
+    content: "\f103";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #0A84CB;
+    margin-right: 10px;
+}
